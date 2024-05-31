@@ -1,4 +1,5 @@
 #This code is written to help identify whether a year is or isn't a leap year based on specific calculations
+#Daniel Moon
 while True:
 
     year = int(input("Enter a year: "))
