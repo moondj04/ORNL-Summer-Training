@@ -1,0 +1,10 @@
+# a simple rule example
+
+type= Single
+ptype= RegExp
+pattern= /^\d+-[0-9]{2}-[0-9]{2}/gm
+desc= taking in the date
+action= pipe 'Three SSH login failures, first user is $1' \ /gitrepos -s 'SSH login alert'
+
+# end of the rule definition
+#2024-05-31T08:57:27.936411-04:00 login1.odo.olcf.ornl.gov sshd[125926]: Starting session: shell on pts/2 for ijw from 10.159.203.218 port 56612 id 0
