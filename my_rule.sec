@@ -4,6 +4,6 @@ type= Single
 ptype= RegExp
 pattern = ^(?<date>\d+-\d+-\d+T\d+:\d+:\d+)+(.+for )+(?<username>\w+)+(.+from )+(?<ip_address>\d+\.+\d+\.+\d+\.+\d+) (.+)
 desc= reading when a user logs on
-action = write - $+{username} logged in from $+{ip_address} at $+{date}
+action = write /ccsopen/home/dii/sec.log $+{username} logged in from $+{ip_address} at $+{date}
 
 # end of the rule definition 
