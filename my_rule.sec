@@ -2,7 +2,7 @@
  
 type= Single
 ptype= RegExp
-pattern = ^(?<date>\d+-\d+-\d+T\d+:\d+:\d+)+(.+for )+(?<username>\w+)+(.+from )+(?<ip_address>\d+\.+\d+\.+\d+\.+\d+) (.+)
+pattern = ^(?<date>\d+-\d+-\d+T\d+:\d+:\d+)+(.+ Starting session:)(.+for )+(?<username>[a-z]{3}+)+(.+from )+(?<ip_address>\d+\.+\d+\.+\d+\.+\d+) (.+)
 desc= reading when a user logs on
 action = write /ccsopen/home/dii/sec.log $+{username} logged in from $+{ip_address} at $+{date}
 
